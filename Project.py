@@ -378,4 +378,4 @@ root.mainloop()
 engine.say("Kindly Enter Your Username And password of S Q L")
 engine.runAndWait()
 
-import Bank_Project
+import MainScreen
