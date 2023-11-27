@@ -26,7 +26,7 @@ else:
     engine.say("Good Evening, This Project Is Made By Deepesh Kumar")
     engine.runAndWait()
 
-background_image = ImageTk.PhotoImage(file="Images/my_back.jpg")
+background_image = ImageTk.PhotoImage(file="bank_project/Images/my_back.jpg")
 background_label = Label(root, image=background_image)
 background_label.place(x=0, y=0, relwidth=1, relheight=1)
 
@@ -63,13 +63,13 @@ def team(d):
         global photo1
         global photo2
         global photo3
-        im = ImageTk.PhotoImage(file="Images/back2.jpg")
-        im1 = ImageTk.PhotoImage(file="Images/back1.jpg")
-        im2 = ImageTk.PhotoImage(file="Images/back4.jpg")
+        im = ImageTk.PhotoImage(file="bank_project/Images/back2.jpg")
+        im1 = ImageTk.PhotoImage(file="bank_project/Images/back1.jpg")
+        im2 = ImageTk.PhotoImage(file="bank_project/Images/back4.jpg")
         a = [im, im1, im2]
         lab = Label(root1, image=a[e - 1])
         lab.place(x=0, y=0)
-        photo = ImageTk.PhotoImage(file="Images/deepesh.jpg")
+        photo = ImageTk.PhotoImage(file="bank_project/Images/deepesh.jpg")
         l = Label(root1, image=photo)
         l.place(x=10, y=10)
         Label(
@@ -80,7 +80,7 @@ def team(d):
             borderwidth=0,
         ).place(x=70, y=305)
 
-        photo3 = ImageTk.PhotoImage(file="Images/Himanshu.jpg")
+        photo3 = ImageTk.PhotoImage(file="bank_project/Images/Himanshu.jpg")
         l3 = Label(root1, image=photo3)
         l3.place(x=100, y=350)
         Label(
@@ -91,7 +91,7 @@ def team(d):
             borderwidth=0,
         ).place(x=210, y=650)
 
-        photo1 = ImageTk.PhotoImage(file="Images/surya.jpg")
+        photo1 = ImageTk.PhotoImage(file="bank_project/Images/surya.jpg")
         l1 = Label(root1, image=photo1)
         l1.place(x=280, y=10)
         Label(
@@ -102,7 +102,7 @@ def team(d):
             borderwidth=0,
         ).place(x=300, y=215)
 
-        photo2 = ImageTk.PhotoImage(file="Images/sir.jpg")
+        photo2 = ImageTk.PhotoImage(file="bank_project/Images/sir.jpg")
         l2 = Label(root1, image=photo2)
         l2.place(x=490, y=80)
         Label(
@@ -120,7 +120,7 @@ def s():
     root1 = Toplevel()
     root1.overrideredirect(True)
     root1.geometry("+671+470")  # 440,289
-    img = ImageTk.PhotoImage(file="Images/s.jpg")
+    img = ImageTk.PhotoImage(file="bank_project/Images/s.jpg")
     l = Label(root1, image=img)
     l.pack()
     root1.after(7000, root1.destroy)
@@ -131,7 +131,7 @@ def d():
     root1 = Toplevel()
     root1.overrideredirect(True)
     root1.geometry("+816+501")
-    img1 = ImageTk.PhotoImage(file="Images/d.jpg")
+    img1 = ImageTk.PhotoImage(file="bank_project/Images/d.jpg")
     l = Label(root1, image=img1)
     l.pack()
     root1.after(7000, root1.destroy)
@@ -142,7 +142,7 @@ def m():
     root1 = Toplevel()
     root1.overrideredirect(True)
     root1.geometry("+962+501")
-    i1 = ImageTk.PhotoImage(file="Images/m.jpg")
+    i1 = ImageTk.PhotoImage(file="bank_project/Images/m.jpg")
     l = Label(root1, image=i1)
     l.pack()
     root1.after(7000, root1.destroy)
@@ -153,7 +153,7 @@ def s1():
     root1 = Toplevel()
     root1.overrideredirect(True)
     root1.geometry("+1105+470")
-    i = ImageTk.PhotoImage(file="Images/s.jpg")
+    i = ImageTk.PhotoImage(file="bank_project/Images/s.jpg")
     l = Label(root1, image=i)
     l.pack()
     root1.after(7000, root1.destroy)
@@ -166,7 +166,7 @@ def s2():
     root1 = Toplevel()
     root1.overrideredirect(True)
     root1.geometry("+793+340")
-    i2 = ImageTk.PhotoImage(file="Images/sdms1.png")
+    i2 = ImageTk.PhotoImage(file="bank_project/Images/sdms1.png")
     l = Label(root1, image=i2)
     l.pack()
     root1.after(7000, root1.destroy)
@@ -307,7 +307,7 @@ root.bind("<b>", ab)
 root.bind("<o>", cd)
 root.bind("<i>", ef)
 
-btn1 = ImageTk.PhotoImage(file="Images/sdms.png")
+btn1 = ImageTk.PhotoImage(file="bank_project/Images/sdms.png")
 b = Button(
     root,
     image=btn1,
@@ -338,10 +338,10 @@ b2 = Button(
     command=lambda: module(1),
 )
 b2.place(x=0, y=300)
-btn = ImageTk.PhotoImage(file="Images/sir1.jpg")
+btn = ImageTk.PhotoImage(file="bank_project/Images/sir1.jpg")
 b5 = Button(root, image=btn, command=lambda: sir(1), borderwidth=0).place(x=0, y=888)
 
-btn2 = ImageTk.PhotoImage(file="Images/team.png")
+btn2 = ImageTk.PhotoImage(file="bank_project/Images/team.png")
 b3 = Button(root, image=btn2, borderwidth=0, command=lambda: team(1))
 b3.place(x=1800, y=977)
 
@@ -369,7 +369,7 @@ def auto(p):
 
 root.bind("<p>", auto)
 
-btn3 = ImageTk.PhotoImage(file="Images/play1.png")
+btn3 = ImageTk.PhotoImage(file="bank_project/Images/play1.png")
 b6 = Button(
     root, image=btn3, command=lambda: auto(1), borderwidth=10, bg="grey6"
 ).place(x=890, y=963)

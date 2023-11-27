@@ -74,7 +74,7 @@ engine.runAndWait()
 root = Tk()
 root.overrideredirect(True)
 root.geometry(f"{win_width}x{win_height}+{mid_width}+165")
-background_image = ImageTk.PhotoImage(file="Images\sql.png")
+background_image = ImageTk.PhotoImage(file="bank_project/Images/sql.png")
 background_label = Label(root, image=background_image)
 background_label.place(x=0, y=0, relwidth=1, relheight=1)
 frame = LabelFrame(root, padx=20, bg="grey5", borderwidth=0)
@@ -91,8 +91,7 @@ l1 = Label(frame1, text="PASSWORD:", bg="grey5", fg="cyan").grid(
 f = Entry(frame1, width=20, bg="greenyellow", fg="grey5", relief=SUNKEN, show="\a")
 f.grid(row=0, column=1, padx=20, pady=20)
 f.insert(0, "deepesh")
-btn = PhotoImage(file="Images/Submit.png")
-# img=Label(image=btn)
+btn = PhotoImage(file="bank_project/Images/Submit.png")
 """----------------------------------------------------------------------------------------------------"""
 
 
@@ -150,7 +149,7 @@ def load():
     root.geometry(f"+{mid_width}+165")
     lbl = ImageLabel(root)
     lbl.pack()
-    lbl.load("circle.gif")
+    lbl.load("bank_project/Images/circle.gif")
     root.after(5000, lambda: root.destroy())
     """---------------------------------------"""
     """----------Top screen for text----------"""
